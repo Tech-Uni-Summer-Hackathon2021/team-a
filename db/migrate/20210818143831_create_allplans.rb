@@ -1,6 +1,6 @@
-class CreatePlanLists < ActiveRecord::Migration[5.2]
+class CreateAllplans < ActiveRecord::Migration[5.2]
   def change
-    create_table :plan_lists do |t|
+    create_table :allplans do |t|
       t.integer :dec_dateid
       t.string :dec_date
 

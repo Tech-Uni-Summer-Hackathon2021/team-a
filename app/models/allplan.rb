@@ -1,0 +1,2 @@
+class Allplan < ApplicationRecord
+end
