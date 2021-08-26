@@ -1,0 +1,2 @@
+module AllplansHelper
+end

@@ -1,8 +1,14 @@
 Rails.application.routes.draw do
-  root 'plan#index'
+  # get 'allplan/index'
+  # get 'allplan/show'
+  # post "/index/create" => "plan#create"
+  root 'allplans#index'
+  resources :allplans do
+    resources :details
+  end
+
   # get 'plan/index'
-  # # post 'plan/new'
+  # post 'plan/new'
   # get 'plan/show'
-  resources :plan
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
