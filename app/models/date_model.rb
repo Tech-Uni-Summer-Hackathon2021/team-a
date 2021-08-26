@@ -1,0 +1,2 @@
+class DateModel < ApplicationRecord
+end
