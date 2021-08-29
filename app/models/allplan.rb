@@ -1,3 +1,3 @@
 class Allplan < ApplicationRecord
-  has_many :detail, foreign_key: 'Detail_id'
+  has_many :details, foreign_key: 'Detail_id'
 end

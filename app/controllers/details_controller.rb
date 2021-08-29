@@ -25,7 +25,7 @@ class DetailsController < ApplicationController
 
   private
   def detail_params
-     params.require(:detail).permit(:example, :post_id)
+     params.require(:detail).permit(:example, :allplan_id)
   end
 
 
