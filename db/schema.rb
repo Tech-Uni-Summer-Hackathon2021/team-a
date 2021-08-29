@@ -10,13 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_08_29_163057) do
+ActiveRecord::Schema.define(version: 2021_08_29_181738) do
 
   create_table "allplans", force: :cascade do |t|
     t.integer "dec_dateid"
     t.string "dec_date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "playeat"
   end
 
   create_table "days", force: :cascade do |t|
