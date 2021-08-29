@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_08_20_121104) do
+ActiveRecord::Schema.define(version: 2021_08_29_163057) do
 
   create_table "allplans", force: :cascade do |t|
     t.integer "dec_dateid"
@@ -19,10 +19,25 @@ ActiveRecord::Schema.define(version: 2021_08_20_121104) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "days", force: :cascade do |t|
+    t.integer "day"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "decdates", force: :cascade do |t|
+    t.integer "userid"
+    t.integer "dateid"
+    t.integer "result"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "details", force: :cascade do |t|
     t.string "example"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "allplan_id"
   end
 
   create_table "group_users", force: :cascade do |t|
@@ -45,6 +60,12 @@ ActiveRecord::Schema.define(version: 2021_08_20_121104) do
   create_table "planlists", force: :cascade do |t|
     t.integer "dec_dateid"
     t.string "dec_date"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
