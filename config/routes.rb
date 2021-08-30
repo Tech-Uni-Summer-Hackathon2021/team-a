@@ -4,9 +4,8 @@ Rails.application.routes.draw do
   # post "/index/create" => "plan#create"
   root 'allplans#index'
   resources :allplans do
-    resources :details
+    resources :days
   end
-
   # get 'plan/index'
   # post 'plan/new'
   # get 'plan/show'

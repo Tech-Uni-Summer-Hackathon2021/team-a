@@ -19,13 +19,44 @@ class AllplansController < ApplicationController
   
   def update
     @allplan = Allplan.find(params[:id])
-    if @allplan.update(allplan_params)
-      redirect_to root_path, notice: 'Success!'
+    @allplan.update(allplan_params)
+    # ////////////////////////////////////////
+    require "date"
+    d = Date.today
+    month = d.month
+    date = d.day
+    num = 0
+
+    p month
+    p date
+    if month === 2 or month === 4 or month === 6 or month === 9
+       while num < 31 do
+        if date === 30
+          date = 0;
+          month += 1
+        end
+         date += 1
+        #  monthbox.push(month)
+        #  daybox.push(date)
+        @allplan.day.create(month:month,day:date)
+        num+=1
+       end
     else
-      flash[:alert] = 'Save error!'
-      render :edit
-      redirect_to root_path, notice: 'Success!'
+       while num < 31 do
+        if date === 31
+          date = 0;
+          month += 1
+        end
+         date = date += 1
+        #  monthbox.push(month)
+        #  daybox.push(date)
+        @allplan.days.create(month:month,day:date)
+        num+=1
+       end
     end
+    # ////////////////////////////////////////////
+    
+    redirect_to allplan_path(@allplan)
   end
   
   def show

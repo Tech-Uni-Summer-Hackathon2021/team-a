@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_08_29_181738) do
+ActiveRecord::Schema.define(version: 2021_08_30_104521) do
 
   create_table "allplans", force: :cascade do |t|
     t.integer "dec_dateid"
@@ -21,9 +21,12 @@ ActiveRecord::Schema.define(version: 2021_08_29_181738) do
   end
 
   create_table "days", force: :cascade do |t|
+    t.integer "allplan_id"
+    t.integer "month"
     t.integer "day"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["allplan_id"], name: "index_days_on_allplan_id"
   end
 
   create_table "decdates", force: :cascade do |t|
