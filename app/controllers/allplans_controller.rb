@@ -16,7 +16,18 @@ class AllplansController < ApplicationController
   def edit
     @allplan = Allplan.find(params[:id])
   end
-  
+
+  def user
+    @allplan = Allplan.find(params[:id])
+    @user = User.new
+  end
+  def usercreate
+    @allplan = Allplan.find(params[:id])
+    @user = @allplan.users.new(user_params)
+    @user.save
+    redirect_to edit_allplan_path(@allplan)
+  end
+
   def update
     @allplan = Allplan.find(params[:id])
     @allplan.update(allplan_params)
@@ -55,7 +66,7 @@ class AllplansController < ApplicationController
        end
     end
     # ////////////////////////////////////////////
-    
+
     redirect_to allplan_path(@allplan)
   end
   
@@ -66,6 +77,10 @@ class AllplansController < ApplicationController
   private
   def allplan_params
      params.require(:allplan).permit(:dec_dateid,:dec_date,:playeat)
+  end
+
+  def user_params
+     params.require(:user).permit(:username,:allplan_id)
   end
 
 end

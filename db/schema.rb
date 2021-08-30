@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_08_30_104521) do
+ActiveRecord::Schema.define(version: 2021_08_30_151019) do
 
   create_table "allplans", force: :cascade do |t|
     t.integer "dec_dateid"
@@ -69,9 +69,11 @@ ActiveRecord::Schema.define(version: 2021_08_30_104521) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "name"
+    t.integer "allplan_id"
+    t.string "username"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["allplan_id"], name: "index_users_on_allplan_id"
   end
 
 end
