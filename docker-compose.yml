@@ -1,0 +1,26 @@
+version: "3.8"
+
+services:
+  backend:
+    build:
+      context: ./backend
+      args:
+        WORKDIR: $WORKDIR
+    volumes:
+      - ./backend:/$WORKDIR
+    ports:
+      - "$API_PORT:$CONTAINER_PORT"
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        WORKDIR: $WORKDIR
+        CONTAINER_PORT: $CONTAINER_PORT
+    command: yarn run dev
+    volumes:
+      - ./frontend:/$WORKDIR
+    ports:
+      - "$FRONT_PORT:$CONTAINER_PORT"
+    depends_on:
+      - backend
