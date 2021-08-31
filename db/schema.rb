@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_08_30_151019) do
+ActiveRecord::Schema.define(version: 2021_08_30_170004) do
 
   create_table "allplans", force: :cascade do |t|
     t.integer "dec_dateid"
@@ -30,11 +30,14 @@ ActiveRecord::Schema.define(version: 2021_08_30_151019) do
   end
 
   create_table "decdates", force: :cascade do |t|
-    t.integer "userid"
-    t.integer "dateid"
+    t.integer "allplan_id"
+    t.integer "user_id"
+    t.integer "dayid"
     t.integer "result"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["allplan_id"], name: "index_decdates_on_allplan_id"
+    t.index ["user_id"], name: "index_decdates_on_user_id"
   end
 
   create_table "details", force: :cascade do |t|
