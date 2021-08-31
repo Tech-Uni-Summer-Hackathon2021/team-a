@@ -1,24 +1,29 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# コンテナ内で任意のコマンドを実行する
 
-Things you may want to cover:
+$ docker-compose run <サービス名> <任意のコマンド>
 
-* Ruby version
+# Docker イメージを作成する
 
-* System dependencies
+$ docker-compose build
 
-* Configuration
+# 複数のコンテナの生成し起動する
 
-* Database creation
+$ docker-compose up
 
-* Database initialization
+# コンテナを停止する
 
-* How to run the test suite
+$ docker-compose stop
 
-* Services (job queues, cache servers, search engines, etc.)
+# 停止中のコンテナを削除する
 
-* Deployment instructions
+$ docker-compose rm -f
 
-* ...
+# コンテナの停止・削除を一度に行う
+
+$ docker-compose down
+
+# コンテナの一覧を表示する
+
+$ docker-compose ps -a
