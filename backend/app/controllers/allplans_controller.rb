@@ -26,7 +26,8 @@ class AllplansController < ApplicationController
     @user = @allplan.users.new(user_params)
     @user.save
     session[:current_user_id] = user.id
-    redirect_to decdateindex_path
+    @user = User.last
+    redirect_to decdateindex_path(user_id: @user)
   end
 
   def update
