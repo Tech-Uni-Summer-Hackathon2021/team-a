@@ -25,7 +25,8 @@ class AllplansController < ApplicationController
     @allplan = Allplan.find(params[:id])
     @user = @allplan.users.new(user_params)
     @user.save
-    redirect_to edit_allplan_path(@allplan)
+    session[:current_user_id] = user.id
+    redirect_to decdateindex_path
   end
 
   def update
@@ -49,7 +50,7 @@ class AllplansController < ApplicationController
          date += 1
         #  monthbox.push(month)
         #  daybox.push(date)
-        @allplan.day.create(month:month,day:date)
+        @allplan.days.create(month:month,day:date)
         num+=1
        end
     else

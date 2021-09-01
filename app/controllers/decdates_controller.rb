@@ -1,7 +1,7 @@
 class DecdatesController < ApplicationController
   def index
     @allplan = Allplan.find(params[:id])
-    @user = User.find(params[:id])
+    @user = User.find(params[:user_id])
     @day = Day.where(id: @allplan.id).first
 
 
