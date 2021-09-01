@@ -3,6 +3,8 @@
 # コンテナ内で任意のコマンドを実行する
 
 $ docker-compose run <サービス名> <任意のコマンド>
+例：Gemfileをいじった場合
+$ docker-compose run backend bundle install
 
 # Docker イメージを作成する
 
