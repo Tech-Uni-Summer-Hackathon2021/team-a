@@ -2,7 +2,7 @@
 
 
 <% j = 0 %>
-<%= form_with( model: [@allplan,@user,@form] ,url: decdateindex_path, method: :post) do |f| %>
+<%= form_with( model: [@allplan,@user,@form],url: decdateindex_path, method: :post) do |f| %>
   <%=  f.fields_for :decdates do |i| %>
     <%= i.hidden_field :allplan_id, :value => @allplan.id %>
     <%= i.hidden_field :user_id, :value => @user.id %>

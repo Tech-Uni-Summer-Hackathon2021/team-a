@@ -11,8 +11,12 @@ class DecdatesController < ApplicationController
   end
   def create
     @form = Form::DecdateCollection.new(decdate_collection_params)
-    @form.save
-    redirect_to decdateindex_path
+    if @form.save
+      redirect_to todopage_path, notice: 'Success!'
+    else
+      flash[:alert] = 'Save error! '
+      render :index
+    end
   end
     # @decdates = Decdate.all
     # @days = Day.all

@@ -1,3 +1,6 @@
+<%= @allplannow %><br>
+<%= @allplandedlind %><br>
+<%= @aaa %><br>
 <%= @sums %>
 <%= @usersleng %>
 <%= @decdatesleng %>
@@ -5,28 +8,31 @@
 <%= @max_val %>
 <%= @max_point %><br>
 <%= @resultid %>
-<%= @resultdate %>
+<%= @resultdates %>
 <%= @resultmonth %>
 <%= @resultday %><br>
 <%= @resultusers %>
 <%= @resultuserids %>
 <%= @resultusernames %><br>
-<%= @dectodo.decdo %><br>
+<%# <%= @dectodo.decdo %><br> %>
 
-<h1>予定が決定しました</h1>
-<p>
-<%= "日程" %>
-</p>
-<p>
-<%= "2021年#{@resultmonth}月#{@resultday}日" %>
-</p>
-<p>
-<%= "メンバー" %>
-</p>
-<% for @resultusername in @resultusernames do%>
+<% if @flag === 1  %>
+  <h1>予定が決定しました</h1>
   <p>
-    <%= "#{@resultusername}" %>
+  <%= "日程" %>
   </p>
-<% end  %>
-
+  <p>
+  <%= "2021年#{@resultmonth}月#{@resultday}日" %>
+  </p>
+  <p>
+  <%= "メンバー" %>
+  </p>
+  <% for @resultusername in @resultusernames do%>
+    <p>
+      <%= "#{@resultusername}" %>
+    </p>
+  <% end  %>
+<% else %>
+  <h1>結果の集計までしばらくお待ちください</h1>
+<% end %>
 
