@@ -1,0 +1,32 @@
+<%= @sums %>
+<%= @usersleng %>
+<%= @decdatesleng %>
+<%= @decdatedayidsleng %>
+<%= @max_val %>
+<%= @max_point %><br>
+<%= @resultid %>
+<%= @resultdate %>
+<%= @resultmonth %>
+<%= @resultday %><br>
+<%= @resultusers %>
+<%= @resultuserids %>
+<%= @resultusernames %><br>
+<%= @dectodo.decdo %><br>
+
+<h1>予定が決定しました</h1>
+<p>
+<%= "日程" %>
+</p>
+<p>
+<%= "2021年#{@resultmonth}月#{@resultday}日" %>
+</p>
+<p>
+<%= "メンバー" %>
+</p>
+<% for @resultusername in @resultusernames do%>
+  <p>
+    <%= "#{@resultusername}" %>
+  </p>
+<% end  %>
+
+
