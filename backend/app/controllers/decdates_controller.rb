@@ -12,7 +12,7 @@ class DecdatesController < ApplicationController
   def create
     @form = Form::DecdateCollection.new(decdate_collection_params)
     if @form.save
-      redirect_to decdateindex_path, notice: 'Success!'
+      redirect_to todopage_path, notice: 'Success!'
     else
       flash[:alert] = 'Save error! '
       render :index
