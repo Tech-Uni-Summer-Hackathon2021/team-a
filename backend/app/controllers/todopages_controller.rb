@@ -1,7 +1,7 @@
 class TodopagesController < ApplicationController
   def index
-    @todopages = Todopage.all
     @allplan = Allplan.find(params[:id])
+    @todopages = Todopage.where(allplan_id: @allplan.id)
     @todopage = Todopage.new
   end
   def create

@@ -1,4 +1,5 @@
 class Form::DecdateCollection < Form::Base
+
   FORM_COUNT = 31
   attr_accessor :decdates
 

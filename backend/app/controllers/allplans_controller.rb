@@ -24,10 +24,15 @@ class AllplansController < ApplicationController
   def usercreate
     @allplan = Allplan.find(params[:id])
     @user = @allplan.users.new(user_params)
-    @user.save
-    session[:current_user_id] = user.id
-    @user = User.last
-    redirect_to decdateindex_path(user_id: @user)
+    if @user.save
+      session[:current_user_id] = user.id
+      @user = User.last
+      redirect_to decdateindex_path(user_id: @user)
+    else
+      flash[:alert] = 'Save error! 名前が重複している可能性があります別の表記をお試しください'
+      render :user
+    end
+
   end
 
   def update
