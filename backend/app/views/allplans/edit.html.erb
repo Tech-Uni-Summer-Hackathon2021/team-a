@@ -1,0 +1,10 @@
+<div>
+  <h2>U</h2>
+    <%= form_with model: @allplan, local: true do |f| %>
+      <%= f.radio_button :playeat, :'遊び' %>
+      <%= f.label :playeat, "遊び（一日の予定を集計します）", {value: :playeat} %><br>
+      <%= f.radio_button :playeat, :'ご飯' %>
+      <%= f.label :playeat, "ご飯（18時以降の予定を集計します)", {value: :playeat} %><br>
+      <%= f.submit "次へ" %>
+    <% end %>
+</div>

@@ -1,0 +1,15 @@
+<h1>日程調整</h1>
+
+
+<%= form_with( model: [@allplan,@user,@form] ,url: decdateindex_path, method: :post) do |f| %>
+  <%=  f.fields_for :decdates do |i| %>
+    <%= i.hidden_field :allplan_id, :value => @allplan.id %>
+    <%= i.hidden_field :user_id, :value => @user.id %>
+    <label><%= "#{@day.month} #{@day.day}" %></label>
+    <%= i.label :result, '◎', value: 1 %>
+    <%= i.radio_button :result, '1' %>
+    <%= i.label :result, '✕', value: 0 %>
+    <%= i.radio_button :result, '0' %> <br>
+  <% end %>
+  <%= f.submit "送信"  %>
+<% end %>
