@@ -129,11 +129,24 @@ class AllplansController < ApplicationController
     # ユーザーidがわかったので、名前を取り出す 
     @resultusersid = User.where(id: @resultuserids)
     j = 0
-    @resultusername = []
+    @resultusernames = []
     while j < @resultusersid.length do
-    @resultusername.push(@resultusersid[j].username)###################################
+    @resultusernames.push(@resultusersid[j].username)###################################
     j+=1
     end
+
+    # やることを決める
+    @todos = Todopage.where(allplan_id: @allplan.id)
+    @todopoint = @todos.sample
+    @todo = @allplan.result_todos.new(decdo: @todopoint.task)
+    @todo.save
+    @dectodo = ResultTodo.where(allplan_id: @allplan.id).first
+
+
+
+    
+
+
   end
   private
   def allplan_params

@@ -1,0 +1,14 @@
+
+  <h1>投稿一覧</h1>
+    <% @todopages.each do |todopage| %>
+      <span><%= todopage.task %></span>
+    <% end %>
+    <h1>投稿フォーム</h1>
+    <%= form_with(model: [@allplan,@todopage], local: true) do |f| %>
+      <h3>本文</h3>
+      <%= f.text_field :task %>
+      <%= f.submit 'やることを追加' %>
+
+    <% end %>
+
+    <%= link_to "次へ", root_path %>

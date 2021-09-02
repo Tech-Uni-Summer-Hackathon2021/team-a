@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_08_30_170004) do
+ActiveRecord::Schema.define(version: 2021_09_02_093717) do
 
   create_table "allplans", force: :cascade do |t|
     t.integer "dec_dateid"
@@ -40,6 +40,22 @@ ActiveRecord::Schema.define(version: 2021_08_30_170004) do
     t.index ["user_id"], name: "index_decdates_on_user_id"
   end
 
+  create_table "result_todos", force: :cascade do |t|
+    t.integer "allplan_id"
+    t.string "decdo"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["allplan_id"], name: "index_result_todos_on_allplan_id"
+  end
+
+  create_table "todopages", force: :cascade do |t|
+    t.integer "allplan_id"
+    t.text "task"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["allplan_id"], name: "index_todopages_on_allplan_id"
+  end
+
   create_table "users", force: :cascade do |t|
     t.integer "allplan_id"
     t.string "username"
@@ -51,5 +67,7 @@ ActiveRecord::Schema.define(version: 2021_08_30_170004) do
   add_foreign_key "days", "allplans"
   add_foreign_key "decdates", "allplans"
   add_foreign_key "decdates", "users"
+  add_foreign_key "result_todos", "allplans"
+  add_foreign_key "todopages", "allplans"
   add_foreign_key "users", "allplans"
 end
