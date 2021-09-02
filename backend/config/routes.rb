@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   post 'allplans/:id/users' , to:'allplans#usercreate'
   get 'allplans/:id/users/:user_id/decdates' , to:'decdates#index', as: :decdateindex
   post 'allplans/:id/users/:user_id/decdates' , to:'decdates#create'
+  get 'allplans/:id/sum' , to:'allplans#sum', as: :allplansum
+
 
   root 'allplans#index'
   resources :allplans do

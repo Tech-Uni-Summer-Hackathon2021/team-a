@@ -21,7 +21,10 @@ class DecdatesController < ApplicationController
     # @decdate.save
     # end
     # redirect_to root_path
+  def sum
+    @allplan = Allplan.find(params[:id])
 
+  end
   private
 
   def decdate_params
