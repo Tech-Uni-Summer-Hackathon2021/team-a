@@ -1,22 +1,111 @@
-<h1>スタート</h1>
+<div>
+  <div>
+    <div class="top text-center">
+    
+      <div class="toptext">
+        <h1>smart adjust</h1>
+      </div>
+      <div class = "toptext2">
+        <%= form_with(model: @allplan, local: true) do |f| %>
+        <%# ここの中身はいじらないで、（クラスはつけていいよ %>
+          <%# <h4>Title</h4> %>
+          <%= f.hidden_field :dec_dateid %>
+        
+          <%# <h4>Body</h4> %>
+          <%= f.hidden_field :dec_date %>
+        
+          <%= f.hidden_field :playeat %>
+        
+          <span class="p-4 topcont">
+            <%= f.submit 'スタート',class: "background-color"  %>
+          </span>
+        <%# ここまで %>
+        <% end %>
+      </div>
+    </div>
+    <div>
+      <h1 class="text-center py-5">あの面倒なイベント企画をいつでも！どこでも！だれとでも！"samrt"に"adjust"しよう！</h1>
+    </div>
+    <div class = "main redcolor text-center">
+      <h2 class="text-white">今すぐ始められる簡単４ステップ</h2>
+      <div class="flex">
+        <!-- この下のDIVがflex -->
+        <div class="col-sm-5 maincon bg-white">
+          <div>
+            <h3>1</h3>
+            <h4></h4>
+            <%= image_tag '1.png' %>
+            <p>まず、ご飯を食べに行くかどこかへ遊びに行くかを選択します。</p>
+          </div>
+        </div>
+        <div class="col-sm-5 maincon bg-white">
+          <div>
+            <h3>2</h3>
+            <h4></h4>
+            <%= image_tag '2.png' %>
+            <p>1か月の日程が表示されますので、都合の良い日にちの選択を行います。</p>
+          </div>
+        </div>
+        <div class="col-sm-5 maincon bg-white">
+          <div>
+            <h3>3</h3>
+            <h4></h4>
+            <%= image_tag '3.png' %>
+            <p>ご飯を食べに行くのであれば、どこに行きたいのか、遊びに行くのであればどこに行きたいのか、もしくは、何をしたいのかを投稿します。</p>
+          </div>
+        </div>
+        <div class="col-sm-5 maincon bg-white">
+          <div>
+            <h3>4</h3>
+            <h4></h4>
+            <%= image_tag '4.png' %>
+            <p>全員が全ての作業を完了すれば、Smart Adjustがメンバー、日程そしてイベント内容を決定しお知らせします。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h2 class="text-center py-5">どんなに面倒なイベント企画もSmart Adjustにお任せください！</h2>
+    </div>
+    <div>
+      <div class= "text-center redcolor">
+        <h2 class="py-5">さっそく予定調整してみる</h2>
+        <span>
+          <%= form_with(model: @allplan, local: true) do |f| %>
+            <%# ここの中身はいじらないで、（クラスはつけていいよ %>
+            <%# <h4>Title</h4> %>
+            <%= f.hidden_field :dec_dateid %>
+        
+            <%# <h4>Body</h4> %>
+            <%= f.hidden_field :dec_date %>
+        
+            <%= f.hidden_field :playeat %>
+        
+            <span class="p-4 ">
+            <%= f.submit 'スタート' ,class: "background-color" %>
+            </spam>
+             <%# ここまで %>
+          <% end %>
+        </span>
+      </div>
+    </div>
+    <div>
+      <div>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <p></p>
+    </div>
+  </div>
+</div>
 
 
-  <%= form_with(model: @allplan, local: true) do |f| %>
-  <%# ここの中身はいじらないで、（クラスはつけていいよ %>
-    <%# <h4>Title</h4> %>
-    <%= f.hidden_field :dec_dateid %>
-  
-    <%# <h4>Body</h4> %>
-    <%= f.hidden_field :dec_date %>
 
-    <%= f.hidden_field :playeat %>
-  
-    <p>
-      <%= f.submit 'スタート' %>
-    </p>
-  <%# ここまで %>
-  
-      
-  
-  <% end %>
+
+
+
 
