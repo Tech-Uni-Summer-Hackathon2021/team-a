@@ -1,5 +1,6 @@
 <h1>日程調整</h1>
 
+<%= "この予定は#{@playeatb}の予定です#{@time}の予定を入力してください" %>
 
 <% j = 0 %>
 <%= form_with( model: [@allplan,@user,@form],url: decdateindex_path, method: :post) do |f| %>
