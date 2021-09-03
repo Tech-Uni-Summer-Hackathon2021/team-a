@@ -1,6 +1,12 @@
 class DecdatesController < ApplicationController
   def index
     @allplan = Allplan.find(params[:id])
+    @playeatb = @allplan.playeat
+    if @playeatb === "ご飯"
+      @time = "18時以降"
+    else
+      @time = "一日空いている日"
+    end
     @user = User.find(params[:user_id])
     @days = Day.where(allplan_id: @allplan.id).first(31)
 

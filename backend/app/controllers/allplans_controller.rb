@@ -13,10 +13,7 @@ class AllplansController < ApplicationController
     end
   end
   
-  def edit
-    @allplan = Allplan.find(params[:id])
-  end
-
+  
   def user
     @allplan = Allplan.find(params[:id])
     @allplanid = Allplan.where(id: @allplan.id)
@@ -28,8 +25,8 @@ class AllplansController < ApplicationController
     else
       @user = User.new
     end
-
-
+    
+    
   end
   def usercreate
     @allplan = Allplan.find(params[:id])
@@ -42,12 +39,16 @@ class AllplansController < ApplicationController
       flash[:alert] = 'Save error! 名前が重複している可能性があります別の表記をお試しください'
       render :user
     end
-
+    
   end
-
+  
+  def edit
+    @allplan = Allplan.find(params[:id])
+  end
   def update
     @allplan = Allplan.find(params[:id])
     @allplan.update(allplan_params)
+    
     # ////////////////////////////////////////
     require "date"
     d = Date.today
@@ -95,7 +96,7 @@ class AllplansController < ApplicationController
     @flag = 0
     @allplan = Allplan.find(params[:id])
     @allplanid = Allplan.where(id: @allplan.id)
-    @allplandedlind = @allplanid[0].created_at+ (240 * 60 * 24)
+    @allplandedlind = @allplanid[0].created_at
     @allplannow = Time.now
     lefttimes = @allplandedlind - @allplannow 
     lefttimemany =lefttimes / (60 * 60 * 24)
