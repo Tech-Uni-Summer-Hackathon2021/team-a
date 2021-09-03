@@ -1,22 +1,29 @@
 <template>
   <div>
-    <div class="hover">集計が完了しました！</div>
-    <p class="makeGroup">
-      以下のメンバーでグループを作成し、各自詳細を決定してください
-    </p>
-    <br />
-    <br />
-    <br />
-    <h3 class="date">日程：</h3>
-    <h3 class="date">すること：</h3>
-    <h3 class="date">参加者：</h3>
-    <br>
-    <div class="box">
-      <h4>残りのTodo</h4>
-      <p>・集合時間の決定<br>
-      ・集合場所決定</p>
+    <div class="none">
+      <div class="hover">集計が完了しました！</div>
+      <p class="makeGroup">
+        以下のメンバーでグループを作成し、各自詳細を決定してください
+      </p>
+      <br />
+      <br />
+      <br />
+      <h3 class="date">日程：</h3>
+      <h3 class="date">すること：</h3>
+      <h3 class="date">参加者：</h3>
+      <br />
+      <div class="box">
+        <h4>残りのTodo</h4>
+        <p>
+          ・集合時間の決定<br />
+          ・集合場所決定
+        </p>
+      </div>
+      <Mybutton>完了</Mybutton>
     </div>
-    <Mybutton>完了</MyButton>
+    <div class="container">
+      <h2>回答ありがとうございました。期限までお待ち下さい。</h2>
+    </div>
   </div>
 </template>
 
@@ -69,6 +76,18 @@ h4 {
   font-size: 25px;
 }
 p {
-  font-size: 20px
+  font-size: 20px;
+}
+.none {
+  display: none;
+}
+h2 {
+  color: #47525e;
+  font-family: Lato;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  text-decoration: underline;
+  margin: 30% 10%;
 }
 </style>
