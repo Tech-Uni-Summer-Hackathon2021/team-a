@@ -1,13 +1,16 @@
 <template>
   <div class="whole">
     <div class="section">
-      <h1 class="form">日程調整フォーム</h1>
+      <h1 class="form">日程調整フォーム</h1><br>
       <h3 class="name">あなたの名前を教えてください</h3>
     </div>
     <div class="section">
       <div class="name">
         <label for="name1">名前</label>
-        <input type="text" name="name" class="nameIn" />
+        <input type="text" name="name" class="nameIn">
+      </div><br><br><br>
+      <div>
+      <MyButton>完了</MyButton>
       </div>
     </div>
   </div>
@@ -28,7 +31,7 @@ export default {}
 }
 .section {
   width: 818px;
-  height: 422px;
+  height: 300px;
 }
 .form {
   color: #47525e;
