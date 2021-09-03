@@ -76,7 +76,6 @@ font-size: 40px;
   background-repeat: no-repeat;
   background-position: left bottom;
   transition: background-size 300ms ease;
-  text-decoration: underline;
 }
 .place {
   margin:30% 0%;
