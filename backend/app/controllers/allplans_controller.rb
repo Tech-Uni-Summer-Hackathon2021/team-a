@@ -16,11 +16,11 @@ class AllplansController < ApplicationController
   def edit
     @allplan = Allplan.find(params[:id])
   end
-  
+
   def user
     @allplan = Allplan.find(params[:id])
     @allplanid = Allplan.where(id: @allplan.id)
-    @allplandedlind = @allplanid[0].created_at
+    @allplandedlind = @allplanid[0].created_at + (240 * 60 * 24)
     @allplannow = Time.now
     @flag = 0
     if @allplannow > @allplandedlind
@@ -29,7 +29,7 @@ class AllplansController < ApplicationController
       @user = User.new
     end
 
-# + (240 * 60 * 24)
+
   end
   def usercreate
     @allplan = Allplan.find(params[:id])
@@ -97,7 +97,9 @@ class AllplansController < ApplicationController
     @allplanid = Allplan.where(id: @allplan.id)
     @allplandedlind = @allplanid[0].created_at+ (240 * 60 * 24)
     @allplannow = Time.now
-    
+    @lefttimes = @allplandedlind - @allplannow 
+    @lefttimemany =@lefttimes / (60 * 60 * 24)
+    @lefttime= @lefttimemany.truncate(2)
     if @allplannow > @allplandedlind
       @flag = 1
       # 今の部屋のidを取得
