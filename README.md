@@ -3,7 +3,8 @@
 ![Tech.Uni SummerHack](https://user-images.githubusercontent.com/63713624/126744501-639e7f32-0ed9-48ff-91e1-2fdee17d7830.jpg)
 
 
-
+##　アプリロゴ
+![修正後ロゴ](https://user-images.githubusercontent.com/88198317/131969781-421f4248-a7cf-48ee-93ea-c92ed98c690b.png)
 ## プロダクト名
 ***smart adjust***
 ## プロダクト説明
