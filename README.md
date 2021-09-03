@@ -34,5 +34,5 @@
 バックエンド: Rails(apiサーバー)
 DB: SQLite
 インフラ： Docker
-![team-a](131473461-17179bd3-15d6-46d9-8201-b9bcbff2ad6d.jpg)
+![131473461-17179bd3-15d6-46d9-8201-b9bcbff2ad6d](https://user-images.githubusercontent.com/88198317/131965993-7533438f-79d3-4dd4-a139-141fe829f4b4.jpg)
 
