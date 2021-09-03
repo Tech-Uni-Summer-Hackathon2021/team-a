@@ -16,10 +16,20 @@ class AllplansController < ApplicationController
   def edit
     @allplan = Allplan.find(params[:id])
   end
-
+  
   def user
     @allplan = Allplan.find(params[:id])
-    @user = User.new
+    @allplanid = Allplan.where(id: @allplan.id)
+    @allplandedlind = @allplanid[0].created_at
+    @allplannow = Time.now
+    @flag = 0
+    if @allplannow > @allplandedlind
+      @flag = 1
+    else
+      @user = User.new
+    end
+
+# + (240 * 60 * 24)
   end
   def usercreate
     @allplan = Allplan.find(params[:id])
