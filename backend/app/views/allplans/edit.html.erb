@@ -1,10 +1,13 @@
 <div>
-  <h2>U</h2>
-    <%= form_with model: @allplan, local: true do |f| %>
-      <%= f.radio_button :playeat, :'遊び' %>
-      <%= f.label :playeat, "遊び（一日の予定を集計します）", {value: :playeat} %><br>
-      <%= f.radio_button :playeat, :'ご飯' %>
-      <%= f.label :playeat, "ご飯（18時以降の予定を集計します)", {value: :playeat} %><br>
-      <%= f.submit "次へ" %>
-    <% end %>
+  <div class="page2 text-center pt-150">
+    <h2 class="font-weight-bold pb-5">イベントの内容を教えてください</h2>
+      <%= form_with model: @allplan, local: true do |f| %>
+        <h2><%= f.radio_button :playeat, :'遊び' %></h2>
+        <h2><%= f.label :playeat, "遊び（一日の予定を集計します）", {value: :playeat} %></h2><br>
+        <h2><%= f.radio_button :playeat, :'ご飯' %></h2>
+        <h2><%= f.label :playeat, "ご飯（18時以降の予定を集計します)", {value: :playeat} %></h2><br>
+        <%= f.submit "次へ" %><br>
+      <% end %>
+
+  </div>
 </div>

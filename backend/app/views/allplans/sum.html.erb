@@ -1,39 +1,30 @@
-<%= @allplannow %><br>
-<%= @allplandedlind %><br>
-<%= @aaa %><br>
-<%= @sums %>
-<%= @usersleng %>
-<%= @decdatesleng %>
-<%= @decdatedayidsleng %>
-<%= @max_val %>
-<%= @max_point %><br>
-<%= @resultid %>
-<%= @resultdates %>
-<%= @resultmonth %>
-<%= @resultday %><br>
-<%= @resultusers %>
-<%= @resultuserids %>
-<%= @resultusernames %><br>
-<%# <%= @dectodo.decdo %><br> %>
-
 <% if @flag === 1  %>
-  <h1>予定が決定しました</h1>
-  <p>
-  <%= "日程" %>
-  </p>
-  <p>
-  <%= "2021年#{@resultmonth}月#{@resultday}日" %>
-  </p>
-  <p>
-  <%= "メンバー" %>
-  </p>
-  <% for @resultusername in @resultusernames do%>
-    <p>
-      <%= "#{@resultusername}" %>
-    </p>
-  <% end  %>
+  <div>
+    <div class="page7 text-center pt-150 ">
+      <h5>集計が終わり、予定が決定しました!!!</h5>
+      <p class=" mb-3">以下のメンバーでグループを作成し、各自詳細を決定してください!!!</p>
+      <div>
+      <p class="d-block"><%= "日程:" %><span class="font-weight-bold"><%= "2021年#{@resultmonth}月#{@resultday}日" %></span></p>
+      <p>すること:<span class="font-weight-bold"><%= @dectodo.decdo %></span></p>
+      <p class="d-block"><%= "メンバー" %></p>
+      <span class="font-weight-bold"><% for @resultusername in @resultusernames do %></span>
+
+        <p class="d-block"><span class="font-weight-bold"><%= @resultusername %></span></p><br> 
+      <% end %>
+    </div>
+    <div class="todo pb-3 px-3 bordersolid pt-1">
+      <p class="d-block">残りのTodo</p>
+      <p class="d-block">・集合時間決定</p>
+      <p class="d-block">・集合場所決定</p>
+    </div>
+  </div>
 <% else %>
-  <h1>結果の集計までしばらくお待ちください</h1>
-  <%= "残り#{@lefttime}日です" %>
+
+  <div>
+    <div class="page6 text-center pt-150 ">
+      <h3 class="font-weight-bold pb-2">結果の集計までしばらくお待ちください</h3>
+      <%= "残り#{@lefttime}日です" %>
+    </div>
+  </div>
 <% end %>
 
