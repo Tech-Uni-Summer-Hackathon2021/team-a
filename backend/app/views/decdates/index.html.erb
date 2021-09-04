@@ -1,20 +1,26 @@
-<h1>日程調整</h1>
 
-<%= "この予定は#{@playeatb}の予定です#{@time}の予定を入力してください" %>
+<div>
+  <div class="page5 text-center pt-150 ">
+    <h2 class="pb-5> 日程調整 </h2>
+    <h2 class="font-weight-bold pb-2 mb-3"><%= "この予定は#{@playeatb}の予定です#{@time}の予定を入力してください" %></h2>
+    
+       <% j = 0 %>
+       <%= form_with( model: [@allplan,@user,@form],url: decdateindex_path, method: :post) do |f| %>
+         <%=  f.fields_for :decdates do |i| %>
+           <%= i.hidden_field :allplan_id, :value => @allplan.id %>
+           <%= i.hidden_field :user_id, :value => @user.id %>
+           <%= i.hidden_field :dayid, :value => @days[j].id %>
+          <p class="ml-2"><%= "#{@days[j].month} #{@days[j].day}" %></p>
+           <% j +=1 %>
+        <p><%= i.label :result, '◎', value: 1 %></p>
+        <p class="ml-1 mr-2"><%= i.radio_button :result, '1' %></p>
+        <p><%= i.label :result, '✕', value: 0 %></p>
+        <p class="ml-2"><%= i.radio_button :result, '0' %> </p><br>
+      <% end %>
+      <%= f.submit "送信"  %>
+    <% end %>
+  </div>
+</div>
 
-<% j = 0 %>
-<%= form_with( model: [@allplan,@user,@form],url: decdateindex_path, method: :post) do |f| %>
-  <%=  f.fields_for :decdates do |i| %>
-    <%= i.hidden_field :allplan_id, :value => @allplan.id %>
-    <%= i.hidden_field :user_id, :value => @user.id %>
-    <%= i.hidden_field :dayid, :value => @days[j].id %>
-    <%= "#{@days[j].month} #{@days[j].day}" %>
-    <% j +=1 %>
-    <%= i.label :result, '◎', value: 1 %>
-    <%= i.radio_button :result, '1' %>
-    <%= i.label :result, '✕', value: 0 %>
-    <%= i.radio_button :result, '0' %> <br>
-  <% end %>
-  <%= f.submit "送信"  %>
-<% end %>
+
 

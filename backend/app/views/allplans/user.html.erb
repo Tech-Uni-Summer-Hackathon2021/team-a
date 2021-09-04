@@ -1,18 +1,21 @@
-<h1>aaaa</h1>
 
 
-<% if @flag === 1  %>
-　　<%= link_to '結果表示画面へ', allplansum_path %>
-<% else %>
-  <%= form_with(model: [@allplan,@user], local: true) do |f| %>
-  <h4>名前を入力してください</h4>
-  <%= f.text_field :username %>
-  <p>
-    <%= f.submit '次へ' %>
-  </p>
-　　
-<% end %>
+<div>
+  <div class="page4 text-center pt-150 ">
+    <% if @flag === 1  %>
+      <h2 class="font-weight-bold pb-2">投票期間が終了しました！</h2>
+      <%= link_to '結果表示画面へ', allplansum_path %>
+    <% else %>
+    <h2 class="pb-4">日程調整フォーム</h2>
+    <h2 class="font-weight-bold pb-2">あなたの名前を教えてください</h2>
+      <%= form_with(model: [@allplan,@user], local: true) do |f| %>
+        <h4 class="mb-2">名前を入力してください</h4>
+        <%= f.text_field :username %>
+        <p>
+          <%= f.submit '次へ' %>
+        </p>
+      <% end %>
+    <% end %>
+  </div>
+</div>
 
-
-
-  <% end %>
