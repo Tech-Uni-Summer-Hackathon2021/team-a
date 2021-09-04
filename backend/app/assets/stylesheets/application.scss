@@ -14,3 +14,17 @@
  *= require_self
  */
  @import "bootstrap";
+
+ *{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+}
+.max{
+  max-width: 1170px;
+  margin: 0 auto;
+}
+a{
+  text-decoration: none;
+}

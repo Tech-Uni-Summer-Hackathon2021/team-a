@@ -96,7 +96,7 @@ class AllplansController < ApplicationController
     @flag = 0
     @allplan = Allplan.find(params[:id])
     @allplanid = Allplan.where(id: @allplan.id)
-    @allplandedlind = @allplanid[0].created_at
+    @allplandedlind = @allplanid[0].created_at + (240 * 60 * 24)
     @allplannow = Time.now
     lefttimes = @allplandedlind - @allplannow 
     lefttimemany =lefttimes / (60 * 60 * 24)
