@@ -1,0 +1,30 @@
+<% if @flag === 1  %>
+  <div>
+    <div class="page7 text-center pt-150 ">
+      <h5 class="big">集計が終わり、予定が決定しました!!!</h5>
+      <p class=" mb-3 fonto28">以下のメンバーでグループを作成し、各自詳細を決定してください!!!</p>
+      <div>
+      <p class="middle d-block"><%= "日程:" %><span class=" middle font-weight-bold"><%= "2021年#{@resultmonth}月#{@resultday}日" %></span></p>
+      <p class="middle">すること:<span class="font-weight-bold middle"><%= @dectodo.decdo %></span></p>
+      <p class="middle d-block"><%= "メンバー" %></p>
+      <span class="middle font-weight-bold"><% for @resultusername in @resultusernames do %></span>
+
+        <p class="middle d-block"><span class="font-weight-bold"><%= @resultusername %></span></p><br> 
+      <% end %>
+    </div>
+    <div class="middle todo pb-3 px-3 bordersolid pt-1">
+      <p class="middle d-block">残りのTodo</p>
+      <p class="middle d-block">・集合時間決定</p>
+      <p class="middle d-block">・集合場所決定</p>
+    </div>
+  </div>
+<% else %>
+
+  <div>
+    <div class="page6 text-center pt-150 ">
+      <h3 class="font-weight-bold pb-2 big">結果の集計までしばらくお待ちください</h3>
+      <%= "残り#{@lefttime}日です" %>
+    </div>
+  </div>
+<% end %>
+

@@ -1,0 +1,880 @@
+Started GET "/" for ::1 at 2021-09-01 15:54:00 +0900
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.6) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.6) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2021-09-01 15:54:02 +0900
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.6) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.6) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:4
+  [1m[35m (7.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:4
+  [1m[35m (7.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to CreateAllplans (20210818143831)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "allplans" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "dec_dateid" integer, "dec_date" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20210818143831_create_allplans.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210818143831"]]
+  ↳ bin/rails:4
+  [1m[35m (6.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+Migrating to AddPlayeatToAllplans (20210829181738)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (2.2ms)[0m  [1m[35mALTER TABLE "allplans" ADD "playeat" varchar[0m
+  ↳ db/migrate/20210829181738_add_playeat_to_allplans.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210829181738"]]
+  ↳ bin/rails:4
+  [1m[35m (6.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+Migrating to CreateDays (20210830104521)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE TABLE "days" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "allplan_id" integer, "month" integer, "day" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_ad706b5f89"
+FOREIGN KEY ("allplan_id")
+  REFERENCES "allplans" ("id")
+)[0m
+  ↳ db/migrate/20210830104521_create_days.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_days_on_allplan_id" ON "days" ("allplan_id")[0m
+  ↳ db/migrate/20210830104521_create_days.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210830104521"]]
+  ↳ bin/rails:4
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+Migrating to CreateUsers (20210830111241)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "allplan_id" integer, "username" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_fbd20bd56b"
+FOREIGN KEY ("allplan_id")
+  REFERENCES "allplans" ("id")
+)[0m
+  ↳ db/migrate/20210830111241_create_users.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_users_on_allplan_id" ON "users" ("allplan_id")[0m
+  ↳ db/migrate/20210830111241_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210830111241"]]
+  ↳ bin/rails:4
+  [1m[35m (6.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+Migrating to CreateDecdates (20210830170004)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE TABLE "decdates" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "allplan_id" integer, "user_id" integer, "dayid" integer, "result" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_4108cf9204"
+FOREIGN KEY ("allplan_id")
+  REFERENCES "allplans" ("id")
+, CONSTRAINT "fk_rails_44542d7640"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  ↳ db/migrate/20210830170004_create_decdates.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_decdates_on_allplan_id" ON "decdates" ("allplan_id")[0m
+  ↳ db/migrate/20210830170004_create_decdates.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_decdates_on_user_id" ON "decdates" ("user_id")[0m
+  ↳ db/migrate/20210830170004_create_decdates.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210830170004"]]
+  ↳ bin/rails:4
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Create (1.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-09-01 06:54:45.198434"], ["updated_at", "2021-09-01 06:54:45.198434"]]
+  ↳ bin/rails:4
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Started GET "/" for ::1 at 2021-09-01 15:55:35 +0900
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by AllplansController#index as HTML
+  Rendering allplans/index.html.erb within layouts/application
+  Rendered allplans/index.html.erb within layouts/application (77.8ms)
+Completed 200 OK in 19147ms (Views: 19064.8ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/allplans" for ::1 at 2021-09-01 15:55:57 +0900
+Processing by AllplansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"snn83WBBpTuOgAN2AN1Pbr4yegdVHyT0g/ieSDTZPIzeDOhrbQ48L+DQQQk6WEDAPq37z/+Jv8fdVC2dv6k/NA==", "allplan"=>{"dec_dateid"=>"", "dec_date"=>"", "playeat"=>""}, "commit"=>"スタート"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:9
+  [1m[36mAllplan Create (1.9ms)[0m  [1m[32mINSERT INTO "allplans" ("dec_date", "created_at", "updated_at", "playeat") VALUES (?, ?, ?, ?)[0m  [["dec_date", ""], ["created_at", "2021-09-01 06:55:57.389283"], ["updated_at", "2021-09-01 06:55:57.389283"], ["playeat", ""]]
+  ↳ app/controllers/allplans_controller.rb:9
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:9
+Redirected to http://localhost:3000/allplans/1/edit
+Completed 302 Found in 28ms (ActiveRecord: 6.9ms)
+
+
+Started GET "/allplans/1/edit" for ::1 at 2021-09-01 15:55:57 +0900
+Processing by AllplansController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAllplan Load (0.4ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:17
+  Rendering allplans/edit.html.erb within layouts/application
+  Rendered allplans/edit.html.erb within layouts/application (104.9ms)
+Completed 200 OK in 407ms (Views: 370.2ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/allplans/1" for ::1 at 2021-09-01 15:56:00 +0900
+Processing by AllplansController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jZbVbcH2Uhrh6XNJosOwd+wWAdUgDV2L3eSwW68tRzPh48HbzLnLDo+5MTaYRr/ZbImAHYqbxriDSAOOJF1Eiw==", "allplan"=>{"playeat"=>"遊び"}, "commit"=>"次へ", "id"=>"1"}
+  [1m[36mAllplan Load (1.1ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:34
+  [1m[36mAllplan Update (1.7ms)[0m  [1m[33mUPDATE "allplans" SET "playeat" = ?, "updated_at" = ? WHERE "allplans"."id" = ?[0m  [["playeat", "遊び"], ["updated_at", "2021-09-01 06:56:00.922903"], ["id", 1]]
+  ↳ app/controllers/allplans_controller.rb:34
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:34
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.3ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.7ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 1], ["month", 9], ["day", 2], ["created_at", "2021-09-01 06:56:01.124119"], ["updated_at", "2021-09-01 06:56:01.124119"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.4ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.5ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 1], ["month", 9], ["day", 3], ["created_at", "2021-09-01 06:56:01.148585"], ["updated_at", "2021-09-01 06:56:01.148585"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (6.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.4ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.4ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 1], ["month", 9], ["day", 4], ["created_at", "2021-09-01 06:56:01.179746"], ["updated_at", "2021-09-01 06:56:01.179746"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (6.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.3ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (2.4ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 1], ["month", 9], ["day", 5], ["created_at", "2021-09-01 06:56:01.208385"], ["updated_at", "2021-09-01 06:56:01.208385"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (6.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.4ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.3ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 1], ["month", 9], ["day", 6], ["created_at", "2021-09-01 06:56:01.238131"], ["updated_at", "2021-09-01 06:56:01.238131"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.5ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.4ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 1], ["month", 9], ["day", 7], ["created_at", "2021-09-01 06:56:01.267821"], ["updated_at", "2021-09-01 06:56:01.267821"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.4ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.4ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 1], ["month", 9], ["day", 8], ["created_at", "2021-09-01 06:56:01.298107"], ["updated_at", "2021-09-01 06:56:01.298107"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (6.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.3ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.4ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 1], ["month", 9], ["day", 9], ["created_at", "2021-09-01 06:56:01.327152"], ["updated_at", "2021-09-01 06:56:01.327152"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (6.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.4ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.5ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 1], ["month", 9], ["day", 10], ["created_at", "2021-09-01 06:56:01.356791"], ["updated_at", "2021-09-01 06:56:01.356791"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (7.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.4ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.6ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 1], ["month", 9], ["day", 11], ["created_at", "2021-09-01 06:56:01.388527"], ["updated_at", "2021-09-01 06:56:01.388527"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.3ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.5ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 1], ["month", 9], ["day", 12], ["created_at", "2021-09-01 06:56:01.417458"], ["updated_at", "2021-09-01 06:56:01.417458"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (5.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.4ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.4ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 1], ["month", 9], ["day", 13], ["created_at", "2021-09-01 06:56:01.448675"], ["updated_at", "2021-09-01 06:56:01.448675"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (5.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.6ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (2.1ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 1], ["month", 9], ["day", 14], ["created_at", "2021-09-01 06:56:01.479477"], ["updated_at", "2021-09-01 06:56:01.479477"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (7.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.6ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.9ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 1], ["month", 9], ["day", 15], ["created_at", "2021-09-01 06:56:01.510327"], ["updated_at", "2021-09-01 06:56:01.510327"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (6.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.6ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.5ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 1], ["month", 9], ["day", 16], ["created_at", "2021-09-01 06:56:01.540818"], ["updated_at", "2021-09-01 06:56:01.540818"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (5.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.4ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.5ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 1], ["month", 9], ["day", 17], ["created_at", "2021-09-01 06:56:01.570828"], ["updated_at", "2021-09-01 06:56:01.570828"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.4ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.4ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 1], ["month", 9], ["day", 18], ["created_at", "2021-09-01 06:56:01.600669"], ["updated_at", "2021-09-01 06:56:01.600669"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.4ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.5ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 1], ["month", 9], ["day", 19], ["created_at", "2021-09-01 06:56:01.630833"], ["updated_at", "2021-09-01 06:56:01.630833"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (6.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.4ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.6ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 1], ["month", 9], ["day", 20], ["created_at", "2021-09-01 06:56:01.660995"], ["updated_at", "2021-09-01 06:56:01.660995"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (6.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.3ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.5ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 1], ["month", 9], ["day", 21], ["created_at", "2021-09-01 06:56:01.690900"], ["updated_at", "2021-09-01 06:56:01.690900"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (7.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.4ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.8ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 1], ["month", 9], ["day", 22], ["created_at", "2021-09-01 06:56:01.722689"], ["updated_at", "2021-09-01 06:56:01.722689"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.4ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.8ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 1], ["month", 9], ["day", 23], ["created_at", "2021-09-01 06:56:01.750706"], ["updated_at", "2021-09-01 06:56:01.750706"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.6ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.5ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 1], ["month", 9], ["day", 24], ["created_at", "2021-09-01 06:56:01.781654"], ["updated_at", "2021-09-01 06:56:01.781654"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (6.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.5ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.7ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 1], ["month", 9], ["day", 25], ["created_at", "2021-09-01 06:56:01.811272"], ["updated_at", "2021-09-01 06:56:01.811272"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (6.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.3ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.4ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 1], ["month", 9], ["day", 26], ["created_at", "2021-09-01 06:56:01.840662"], ["updated_at", "2021-09-01 06:56:01.840662"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (5.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.4ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.4ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 1], ["month", 9], ["day", 27], ["created_at", "2021-09-01 06:56:01.870801"], ["updated_at", "2021-09-01 06:56:01.870801"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (5.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.5ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.5ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 1], ["month", 9], ["day", 28], ["created_at", "2021-09-01 06:56:01.901342"], ["updated_at", "2021-09-01 06:56:01.901342"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (6.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.5ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.7ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 1], ["month", 9], ["day", 29], ["created_at", "2021-09-01 06:56:01.933670"], ["updated_at", "2021-09-01 06:56:01.933670"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (7.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.3ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.5ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 1], ["month", 9], ["day", 30], ["created_at", "2021-09-01 06:56:01.969319"], ["updated_at", "2021-09-01 06:56:01.969319"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (7.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.4ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.6ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 1], ["month", 10], ["day", 1], ["created_at", "2021-09-01 06:56:02.004033"], ["updated_at", "2021-09-01 06:56:02.004033"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (6.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.4ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.5ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 1], ["month", 10], ["day", 2], ["created_at", "2021-09-01 06:56:02.036129"], ["updated_at", "2021-09-01 06:56:02.036129"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (6.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+Redirected to http://localhost:3000/allplans/1
+Completed 302 Found in 1151ms (ActiveRecord: 269.0ms)
+
+
+Started GET "/allplans/1" for ::1 at 2021-09-01 15:56:02 +0900
+Processing by AllplansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAllplan Load (0.4ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:75
+  Rendering allplans/show.html.erb within layouts/application
+  Rendered allplans/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 301ms (Views: 288.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/allplans/1/users" for ::1 at 2021-09-01 15:56:04 +0900
+Processing by AllplansController#user as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAllplan Load (0.5ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:21
+  Rendering allplans/user.html.erb within layouts/application
+  Rendered allplans/user.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 313ms (Views: 233.3ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/allplans/1/users" for ::1 at 2021-09-01 15:56:08 +0900
+Processing by AllplansController#usercreate as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pk3YwQvdacU6wn2M/xGyAMxQj+vIo8xw6l2bWSBiK4A+sAKuRhNH4FLsjjmUWb5Vz5RFqXOnta8Yt9zDQn7Fpg==", "user"=>{"username"=>"aaaaaaaaaaaaaaa"}, "commit"=>"次へ", "id"=>"1"}
+  [1m[36mAllplan Load (0.4ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:25
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:27
+  [1m[36mAllplan Load (0.3ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:27
+  [1m[36mUser Create (1.5ms)[0m  [1m[32mINSERT INTO "users" ("allplan_id", "username", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["allplan_id", 1], ["username", "aaaaaaaaaaaaaaa"], ["created_at", "2021-09-01 06:56:08.124505"], ["updated_at", "2021-09-01 06:56:08.124505"]]
+  ↳ app/controllers/allplans_controller.rb:27
+  [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:27
+  [1m[36mAllplan Load (0.3ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:21
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 8.4ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"index", :controller=>"decdates", :id=>"1"}, missing required keys: [:user_id]):
+  
+app/controllers/allplans_controller.rb:29:in `usercreate'
+Started GET "/allplans/1/users/1" for ::1 at 2021-09-01 15:56:15 +0900
+  
+ActionController::RoutingError (uninitialized constant UsersController):
+  
+activesupport (5.2.6) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.6) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.6) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.6) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.6) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.6) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.6) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.6) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.6) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.6) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.6) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.6) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.6) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.6) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.6) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.6) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/allplans/1/users/1/decdates" for ::1 at 2021-09-01 15:56:23 +0900
+Processing by DecdatesController#index as HTML
+  Parameters: {"id"=>"1", "user_id"=>"1"}
+  [1m[36mAllplan Load (0.4ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/decdates_controller.rb:3
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/decdates_controller.rb:4
+  [1m[36mDay Load (0.5ms)[0m  [1m[34mSELECT  "days".* FROM "days" WHERE "days"."id" = ? ORDER BY "days"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/decdates_controller.rb:5
+  Rendering decdates/index.html.erb within layouts/application
+  Rendered decdates/index.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 338ms (Views: 248.8ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for ::1 at 2021-09-01 15:57:00 +0900
+Processing by AllplansController#index as HTML
+  Rendering allplans/index.html.erb within layouts/application
+  Rendered allplans/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 278ms (Views: 271.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/allplans" for ::1 at 2021-09-01 15:57:02 +0900
+Processing by AllplansController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DNAbHaTC01la8ml5Rd1b25E+ptoIzREOxGB8O/ia+M5gpQ+rqY1KTTSiKwZ/WFR1EaEnEqJbij2azM/uc+r7dg==", "allplan"=>{"dec_dateid"=>"", "dec_date"=>"", "playeat"=>""}, "commit"=>"スタート"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:9
+  [1m[36mAllplan Create (1.7ms)[0m  [1m[32mINSERT INTO "allplans" ("dec_date", "created_at", "updated_at", "playeat") VALUES (?, ?, ?, ?)[0m  [["dec_date", ""], ["created_at", "2021-09-01 06:57:02.592628"], ["updated_at", "2021-09-01 06:57:02.592628"], ["playeat", ""]]
+  ↳ app/controllers/allplans_controller.rb:9
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:9
+Redirected to http://localhost:3000/allplans/2/edit
+Completed 302 Found in 26ms (ActiveRecord: 7.1ms)
+
+
+Started GET "/allplans/2/edit" for ::1 at 2021-09-01 15:57:02 +0900
+Processing by AllplansController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAllplan Load (0.4ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:17
+  Rendering allplans/edit.html.erb within layouts/application
+  Rendered allplans/edit.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 251ms (Views: 241.0ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/allplans/2" for ::1 at 2021-09-01 15:57:08 +0900
+Processing by AllplansController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KR6kVBmKps5F5NCFrnTO9V5mn9DTGs27QaRrUurtWAxFa7DiFMU/2iu0kvqU8cFb3vkeGHmMVogfCNiHYZ1btA==", "allplan"=>{"playeat"=>"遊び"}, "commit"=>"次へ", "id"=>"2"}
+  [1m[36mAllplan Load (0.4ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:34
+  [1m[36mAllplan Update (1.3ms)[0m  [1m[33mUPDATE "allplans" SET "playeat" = ?, "updated_at" = ? WHERE "allplans"."id" = ?[0m  [["playeat", "遊び"], ["updated_at", "2021-09-01 06:57:08.208985"], ["id", 2]]
+  ↳ app/controllers/allplans_controller.rb:34
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:34
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.3ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.6ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 2], ["month", 9], ["day", 2], ["created_at", "2021-09-01 06:57:08.239493"], ["updated_at", "2021-09-01 06:57:08.239493"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.3ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.4ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 2], ["month", 9], ["day", 3], ["created_at", "2021-09-01 06:57:08.264090"], ["updated_at", "2021-09-01 06:57:08.264090"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.4ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.2ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 2], ["month", 9], ["day", 4], ["created_at", "2021-09-01 06:57:08.285254"], ["updated_at", "2021-09-01 06:57:08.285254"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (6.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.3ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.8ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 2], ["month", 9], ["day", 5], ["created_at", "2021-09-01 06:57:08.309377"], ["updated_at", "2021-09-01 06:57:08.309377"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (6.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.3ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.3ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 2], ["month", 9], ["day", 6], ["created_at", "2021-09-01 06:57:08.340701"], ["updated_at", "2021-09-01 06:57:08.340701"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.4ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.7ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 2], ["month", 9], ["day", 7], ["created_at", "2021-09-01 06:57:08.370483"], ["updated_at", "2021-09-01 06:57:08.370483"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.4ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.6ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 2], ["month", 9], ["day", 8], ["created_at", "2021-09-01 06:57:08.401034"], ["updated_at", "2021-09-01 06:57:08.401034"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (5.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.7ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (2.3ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 2], ["month", 9], ["day", 9], ["created_at", "2021-09-01 06:57:08.433095"], ["updated_at", "2021-09-01 06:57:08.433095"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (6.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.4ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.5ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 2], ["month", 9], ["day", 10], ["created_at", "2021-09-01 06:57:08.462656"], ["updated_at", "2021-09-01 06:57:08.462656"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (6.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.3ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.9ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 2], ["month", 9], ["day", 11], ["created_at", "2021-09-01 06:57:08.492314"], ["updated_at", "2021-09-01 06:57:08.492314"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (6.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.4ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (3.0ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 2], ["month", 9], ["day", 12], ["created_at", "2021-09-01 06:57:08.524962"], ["updated_at", "2021-09-01 06:57:08.524962"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (8.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.4ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.5ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 2], ["month", 9], ["day", 13], ["created_at", "2021-09-01 06:57:08.560945"], ["updated_at", "2021-09-01 06:57:08.560945"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (6.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.4ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.6ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 2], ["month", 9], ["day", 14], ["created_at", "2021-09-01 06:57:08.588756"], ["updated_at", "2021-09-01 06:57:08.588756"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (5.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.4ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.5ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 2], ["month", 9], ["day", 15], ["created_at", "2021-09-01 06:57:08.620462"], ["updated_at", "2021-09-01 06:57:08.620462"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.3ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.6ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 2], ["month", 9], ["day", 16], ["created_at", "2021-09-01 06:57:08.652363"], ["updated_at", "2021-09-01 06:57:08.652363"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (6.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.6ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.7ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 2], ["month", 9], ["day", 17], ["created_at", "2021-09-01 06:57:08.686105"], ["updated_at", "2021-09-01 06:57:08.686105"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (6.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.3ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.5ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 2], ["month", 9], ["day", 18], ["created_at", "2021-09-01 06:57:08.710982"], ["updated_at", "2021-09-01 06:57:08.710982"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.4ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (3.2ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 2], ["month", 9], ["day", 19], ["created_at", "2021-09-01 06:57:08.741375"], ["updated_at", "2021-09-01 06:57:08.741375"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.5ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.8ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 2], ["month", 9], ["day", 20], ["created_at", "2021-09-01 06:57:08.774300"], ["updated_at", "2021-09-01 06:57:08.774300"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.4ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.5ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 2], ["month", 9], ["day", 21], ["created_at", "2021-09-01 06:57:08.803177"], ["updated_at", "2021-09-01 06:57:08.803177"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.4ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.4ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 2], ["month", 9], ["day", 22], ["created_at", "2021-09-01 06:57:08.834006"], ["updated_at", "2021-09-01 06:57:08.834006"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (6.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.3ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.5ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 2], ["month", 9], ["day", 23], ["created_at", "2021-09-01 06:57:08.861437"], ["updated_at", "2021-09-01 06:57:08.861437"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (10.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.4ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (2.2ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 2], ["month", 9], ["day", 24], ["created_at", "2021-09-01 06:57:08.898918"], ["updated_at", "2021-09-01 06:57:08.898918"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (7.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.5ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.9ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 2], ["month", 9], ["day", 25], ["created_at", "2021-09-01 06:57:08.929055"], ["updated_at", "2021-09-01 06:57:08.929055"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (7.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.5ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.6ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 2], ["month", 9], ["day", 26], ["created_at", "2021-09-01 06:57:08.960426"], ["updated_at", "2021-09-01 06:57:08.960426"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (6.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.4ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.5ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 2], ["month", 9], ["day", 27], ["created_at", "2021-09-01 06:57:08.998472"], ["updated_at", "2021-09-01 06:57:08.998472"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (7.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.3ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.5ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 2], ["month", 9], ["day", 28], ["created_at", "2021-09-01 06:57:09.028342"], ["updated_at", "2021-09-01 06:57:09.028342"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (6.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.3ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (2.1ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 2], ["month", 9], ["day", 29], ["created_at", "2021-09-01 06:57:09.054551"], ["updated_at", "2021-09-01 06:57:09.054551"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (7.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (1.0ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.6ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 2], ["month", 9], ["day", 30], ["created_at", "2021-09-01 06:57:09.081985"], ["updated_at", "2021-09-01 06:57:09.081985"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (7.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.4ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (1.7ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 2], ["month", 10], ["day", 1], ["created_at", "2021-09-01 06:57:09.113289"], ["updated_at", "2021-09-01 06:57:09.113289"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mAllplan Load (0.4ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[36mDay Create (2.1ms)[0m  [1m[32mINSERT INTO "days" ("allplan_id", "month", "day", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["allplan_id", 2], ["month", 10], ["day", 2], ["created_at", "2021-09-01 06:57:09.142218"], ["updated_at", "2021-09-01 06:57:09.142218"]]
+  ↳ app/controllers/allplans_controller.rb:53
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/allplans_controller.rb:53
+Redirected to http://localhost:3000/allplans/2
+Completed 302 Found in 964ms (ActiveRecord: 278.1ms)
+
+
+Started GET "/allplans/2" for ::1 at 2021-09-01 15:57:09 +0900
+Processing by AllplansController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAllplan Load (0.5ms)[0m  [1m[34mSELECT  "allplans".* FROM "allplans" WHERE "allplans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/allplans_controller.rb:75
+  Rendering allplans/show.html.erb within layouts/application
+  Rendered allplans/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 290ms (Views: 277.6ms | ActiveRecord: 0.5ms)
+
+

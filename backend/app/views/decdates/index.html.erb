@@ -1,0 +1,26 @@
+
+<div>
+  <div class="page5 text-center pt-150 ">
+    <h2 class="pb-5 big"> 日程調整フォーム </h2>
+    <h2 class="font-weight-bold pb-2 mb-3 middle"><%= "この予定は#{@playeatb}の予定です#{@time}の予定を入力してください" %></h2>
+    
+       <% j = 0 %>
+       <%= form_with( model: [@allplan,@user,@form],url: decdateindex_path, method: :post) do |f| %>
+         <%=  f.fields_for :decdates do |i| %>
+           <%= i.hidden_field :allplan_id, :value => @allplan.id %>
+           <%= i.hidden_field :user_id, :value => @user.id %>
+           <%= i.hidden_field :dayid, :value => @days[j].id %>
+          <p class="ml-2 middle"><%= "#{@days[j].month} #{@days[j].day}" %></p>
+           <% j +=1 %>
+        <p><%= i.label :result, '◎', value: 1 %></p>
+        <p class="ml-1 mr-2"><%= i.radio_button :result, '1' %></p>
+        <p><%= i.label :result, '✕', value: 0 %></p>
+        <p class="ml-2"><%= i.radio_button :result, '0' %> </p><br>
+      <% end %>
+      <%= f.submit "送信",class: "px-3 py-1 mt-1 btn  btn-secondary font-weight-bold big"  %>
+    <% end %>
+  </div>
+</div>
+
+
+

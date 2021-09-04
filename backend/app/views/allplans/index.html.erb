@@ -1,0 +1,95 @@
+<div>
+  <div>
+    <div class="top text-center">
+      <h1 class="font-weight-bold fontaizebig pt-3">smart adjust</h1>
+      <div class = "toptext2">
+        <%= form_with(model: @allplan, local: true) do |f| %>
+        <%# ここの中身はいじらないで、（クラスはつけていいよ %>
+          <%# <h4>Title</h4> %>
+          <%= f.hidden_field :dec_dateid %>
+        
+          <%# <h4>Body</h4> %>
+          <%= f.hidden_field :dec_date %>
+        
+          <%= f.hidden_field :playeat %>
+        
+          <%= f.submit 'イベントを作る', class: "p-3 btn  btn-secondary font-weight-bold"  %>
+        <%# ここまで %>
+        <% end %>
+      </div>
+    </div>
+    <div>
+      <h2 class="text-center py-5 font-weight-bold">あの面倒なイベント企画をいつでも！どこでも！だれとでも！"samrt"に"adjust"しよう！</h2>
+    </div>
+    <div class = "main redcolor text-center">
+      <h2 class="text-white font-weight-bold p-4">今すぐ始められる簡単４ステップ</h2>
+      <div class="flex">
+        <!-- この下のDIVがflex -->
+        <div class="col-sm-5 maincon bg-white min-height="400"">
+          <div>
+            <h3 class="Number">1</h3>
+            <p class="title">遊びor夜ご飯で選択！</p>
+            <%= image_tag '1.png', class:"img_preview" %>
+            <p class="py-3">まず、ご飯を食べに行くかどこかへ遊びに行くかを選択します。</p>
+          </div>
+        </div>
+        <div class="col-sm-5 maincon bg-white min-height="400"">
+          <div>
+            <h3 class="Number">2</h3>
+            <p class="title">日程調整フォームに回答</p>
+            <%= image_tag '2.png', class:"img_preview" %>
+            <p class="py-3">1か月の日程が表示されますので、都合の良い日にちの選択を行います。</p>
+          </div>
+        </div>
+        <div class="col-sm-5 maincon bg-white min-height="400"">
+          <div>
+            <h3 class="Number">3</h3>
+            <p class="title">イベント詳細について案を回答</p>
+            <%= image_tag '3.png', class:"img_preview" %>
+            <p class="py-3">ご飯を食べに行くのであれば、どこに行きたいのか、遊びに行くのであればどこに行きたいのか、もしくは、何をしたいのかを投稿します。</p>
+          </div>
+        </div>
+        <div class="col-sm-5 maincon bg-white min-height="400"">
+          <div>
+            <h3 class="Number4">4</h3>
+            <p class="title">日程、すること、メンバー決定</p>
+            <%= image_tag '4.png', class:"img_preview" %>
+            <p class="py-3">全員が全ての作業を完了すれば、Smart Adjustがメンバー、日程そしてイベント内容を決定しお知らせします。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h2 class="text-center py-5 font-weight-bold">どんなに面倒なイベント企画もSmart Adjustにお任せください！</h2>
+    </div>
+    <div>
+      <div class= "text-center redcolor pb-5">
+        <h2 class=" py-5 font-weight-bold text-white">さっそく予定調整してみる</h2>
+        <span>
+          <%= form_with(model: @allplan, local: true) do |f| %>
+            <%# ここの中身はいじらないで、（クラスはつけていいよ %>
+            <%# <h4>Title</h4> %>
+            <%= f.hidden_field :dec_dateid %>
+        
+            <%# <h4>Body</h4> %>
+            <%= f.hidden_field :dec_date %>
+        
+            <%= f.hidden_field :playeat %>
+        
+            <span>
+            <%= f.submit 'イベントを作る', class: "p-3 btn  btn-warning font-weight-bold"%>
+            </spam>
+             <%# ここまで %>
+          <% end %>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+

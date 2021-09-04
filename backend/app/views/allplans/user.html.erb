@@ -1,0 +1,20 @@
+
+
+<div>
+  <div class="page4 text-center pt-150 ">
+    <% if @flag === 1  %>
+      <h2 class="font-weight-bold pb-2">投票期間が終了しました！</h2>
+      <%= link_to '結果表示画面へ', allplansum_path %>
+    <% else %>
+    <h2 class="pb-4 big">日程調整フォーム</h2>
+    <h2 class="font-weight-bold pb-2 middle">あなたの名前を教えてください</h2>
+      <%= form_with(model: [@allplan,@user], local: true, class:"middle") do |f| %>
+        <%= f.text_field :username %>
+        <p>
+          <%= f.submit '次へ',class: "px-3 py-1 mt-1 btn  btn-secondary font-weight-bold big" %>
+        </p>
+      <% end %>
+    <% end %>
+  </div>
+</div>
+

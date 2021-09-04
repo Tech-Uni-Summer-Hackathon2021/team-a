@@ -1,0 +1,23 @@
+<h1>スタート</h1>
+
+<% @allplans.each do |plan| %>
+  <%= plan.id %>
+<% end %>
+
+<%= form_with(model: @allplan, local: true) do |f| %>
+<%= form_tag('/main', method: :post) do %> 
+
+
+  <h4>Title</h4>
+  <%= f.text_field :dec_dateid %>
+
+  <h4>Body</h4>
+  <%= f.text_area :dec_date %>
+
+  <p>
+    <%= f.submit 'create book' %>
+  </p>
+    
+<% end %>
+
+

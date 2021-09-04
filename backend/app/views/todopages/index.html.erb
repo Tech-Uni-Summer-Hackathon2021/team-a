@@ -1,0 +1,21 @@
+<div>
+  <div class="page6 text-center pt-150 ">
+    <h3 class="font-weight-bold pb-2 .big">具体的なイベント案、または店名の候補をあげてください</h3>
+    <p class="small">提案された候補の中から、ランダムで決定します</p>
+    <p class="small">希望の選択肢が既に挙げられている場合も、決定する確率を上げるため、同じ内容のものを入力してください</p>
+    <p class="pt-4 pb-2 font-weight-bold d-block middle">現在挙がっている案</p>
+    <div class="pb-3 px-3 bordersolid pt-1">
+      <% @todopages.each do |todopage| %>
+        <span class="small"><%= todopage.task %></span>
+      <% end %>
+    </div>
+    <div class="mt-3">
+      <%= form_with(model: [@allplan,@todopage], local: true) do |f| %>
+        <%= f.text_field :task, class:"middle" %>
+        <%= f.submit '追加' %>
+      <% end %>
+    </div>
+
+    <%= link_to "次へ", allplansum_path,class: "px-3 py-1 mt-1 btn  btn-secondary font-weight-bold"  %>
+  </div>
+</div>
