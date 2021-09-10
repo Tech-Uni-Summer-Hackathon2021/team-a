@@ -8,7 +8,10 @@ gem 'rails', '~> 6.0.4', '>= 6.0.4.1'
 # Use sqlite3 as the database for Active Record
 gem 'rack-cors'
 
-gem 'sqlite3'
+# gem 'sqlite3'
+group :development, :test do
+  gem 'sqlite3' #do ~ end内部に追加。他のgemは残してください。
+end
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
@@ -69,3 +72,6 @@ gem 'jquery-rails','~>4.3.1'
 gem 'pry-byebug', group: :development
 
 gem 'font-awesome-rails'
+group :production do
+  gem 'pg'
+end
